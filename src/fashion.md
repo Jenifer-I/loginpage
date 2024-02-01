@@ -2,9 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 public class LoginFrame extends JFrame implements ActionListener {
-    private JTextField usernameField;
-    private JPasswordField passwordField;
+private JTextField usernameField;
+private JPasswordField passwordField;
 
     public LoginFrame() {
         setTitle("Login");
