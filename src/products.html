@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Products Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Fashion Store</h1>
+</header>
+<main>
+    <div id="products-container">
+        <%
+        String[][] products = {
+        {"Product 1", "earrings", "product1.jpg"},
+        {"Product 2", "neck sets", "product2.jpg"},
+        {"Product 3", "bangles", "product3.jpg"}
+        {"Product 4", "ring", "product4.jpg"}
+        };
+
+        for (String[] product : products) {
+        %>
+        <div class="product-card">
+            <img src="images/<%= product[2] %>" alt="<%= product[0] %>">
+            <h2><%= product[0] %></h2>
+            <p>$<%= product[1] %></p>
+            <button>Add to Cart</button>
+        </div>
+        <% } %>
+    </div>
+</main>
+</body>
+</html>
+
+

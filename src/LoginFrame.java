@@ -11,13 +11,11 @@ public class LoginFrame extends JFrame implements ActionListener {
         setSize(300, 150);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-
         JLabel usernameLabel = new JLabel("Username:");
         JLabel passwordLabel = new JLabel("Password:");
         usernameField = new JTextField(20);
         passwordField = new JPasswordField(20);
         JButton loginButton = new JButton("Login");
-
         setLayout(new GridLayout(3, 2));
         add(usernameLabel);
         add(usernameField);
@@ -25,17 +23,12 @@ public class LoginFrame extends JFrame implements ActionListener {
         add(passwordField);
         add(new JLabel());
         add(loginButton);
-
-
         loginButton.addActionListener(this);
     }
-
 
     public void actionPerformed(ActionEvent e) {
         String username = usernameField.getText();
         String password = String.valueOf(passwordField.getPassword());
-
-
         System.out.println("Username: " + username);
         System.out.println("Password: " + password);
     }
@@ -47,5 +40,4 @@ public class LoginFrame extends JFrame implements ActionListener {
         });
     }
 }
-
 
